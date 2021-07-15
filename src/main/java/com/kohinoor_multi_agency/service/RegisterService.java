@@ -21,4 +21,10 @@ public class RegisterService {
 		
 	}
 	
+	public Register findByEmailIdAndPassword(String emailID,String password) {
+		return registerRepository.findByEmailIdAndPassword(emailID, password);
+	}
+	
+	
+	
 }   
