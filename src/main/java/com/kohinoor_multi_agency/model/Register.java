@@ -1,23 +1,24 @@
 package com.kohinoor_multi_agency.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "register")
 public class Register {
 @Id
+@Column(name = "UserID")
 private int userID;
+@Column(name = "EmailID")
 private String emailId;
+@Column(name = "Username")
 private String userName;
+@Column(name = "Password")
 private String password;
-
-public Register(int userID, String emailId, String userName, String password) {
-	super();
-	this.userID = userID;
-	this.emailId = emailId;
-	this.userName = userName;
-	this.password = password;
-}
 
 public Register() {
 }

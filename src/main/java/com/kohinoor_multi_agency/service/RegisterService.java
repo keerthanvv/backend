@@ -2,7 +2,6 @@ package com.kohinoor_multi_agency.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.kohinoor_multi_agency.model.Register;
 import com.kohinoor_multi_agency.repository.RegisterRepository;
 
@@ -24,7 +23,5 @@ public class RegisterService {
 	public Register findByEmailIdAndPassword(String emailID,String password) {
 		return registerRepository.findByEmailIdAndPassword(emailID, password);
 	}
-	
-	
 	
 }   
